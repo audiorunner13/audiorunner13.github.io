@@ -51,34 +51,21 @@
 
 <body id="body">
 
-<h1>Intro to JS in a Firefox Browser</h1>
-<h2>All of the below is created with Javascript. </h2>
-
-<script type="text/javascript">
-
-// Here are some examples of things that you might want to do with Javascript
-
-// writing to a document directly
-
-document.write('<p><b>While you are working in Javascript (or any language), it is really important to be able to debug. Some browsers offer very simple ways to see what is happening on a page.</b></p>');
-document.write('<p>Chrome and Firefox in particular offer good Developer Tools and Javascript console access</p><br>');
-</script>
-
-<script type="text/javascript">
-
-// Find this bug in the console and fix it!
-
-document.write('<p>These are really helpful for finding bugs!</p><br>');
-</script>
+<h1>DATA608 Spring 2022 - Knowledge and Visual Analytics </h1>
+<h2>Module 5 Introduction to Javascript </h2>
 
 <script type="text/javascript">
 
 var rightNow = new Date();
 
-document.write('<p>Right now it is ' + rightNow + '</p>');
+document.write('<p><b>Right now it is ' + rightNow + '</p>');
 
 </script>
 
+<script type="text/javascript">
+
+document.write('<p><b>Enter a word that you would like to reverse!</p>');
+</script>
 
 <script type="text/javascript">
 
@@ -110,7 +97,10 @@ function rev_word(word1){
 function word_rev(){
     var w = document.getElementById("word_target");
     w.innerHTML = rev_word(document.getElementById('word1').value);
-};
+}
+</script>
+
+<script type="text/javascript">
 
 function build_table(num_tab){
 
@@ -226,7 +216,9 @@ function tbl_build(){
     var tbl = document.getElementById("table_target");
     tbl.innerHTML = build_table(document.getElementById('num_tab').value);
 }
+
 </script>
+
 <p>
 <form>
     <input id="word1" type="string" size="10">
@@ -235,6 +227,11 @@ function tbl_build(){
 </p>
 
 <div id="word_target"></div>
+
+<script type="text/javascript">
+
+document.write('<p><b>Enter a number to calculate its multiple to 20!</p>');
+</script>
 
 <p>
 <form>
